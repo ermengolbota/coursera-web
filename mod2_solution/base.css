@@ -1,15 +1,70 @@
+/* GENERAL SETTINGS */
+
 body {
-    background-color: white;
-    font-family: "Garamond", serif;
+    background-color: LavenderBlush;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 section {
-    background-color: grey;
+    background-color: LightYellow;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 10px 1em;
+    /* border: 1px solid #7F7570;*/
+    border: 1px solid black;
 }
 
-section .title {
-    background-color: yellow;
+section .content {
+    padding: 0 1em;
+}
+
+.content {
+    clear: both;
+}
+
+.title {
     width: 80px;
+    font-weight: bolder;
+    font-size: 125%;
+    padding: 2px 0.5em 2px 0.5em;
+    margin-right: 0;
+    margin-top: 0;
+    float: right;
+    color: white;
+    text-align: center;
+    /* If we  set border top 1px, then on top there are 2 borders x 1 px (section & title), ugly */
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.title:hover {
+    color: yellow;
+}
+
+
+/* Header settings */
+
+header h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+
+/* Titles colours */
+
+#one .title {
+    background-color: darkblue;
+}
+
+#two .title {
+    background-color: darkred;
+}
+
+#three .title {
+    background-color: darkorange;
 }
 
 
@@ -17,7 +72,7 @@ section .title {
 
 @media (min-width:992px) {
     body {
-        background-color: brown;
+        /* background-color: brown;*/
     }
     section {
         width: 30%;
@@ -28,8 +83,12 @@ section .title {
 /* Tablet */
 
 @media (min-width:682px) and (max-width:991px) {
-    body {
-        background-color: black;
+    section {
+        width: 45%;
+    }
+    /* Section three will fall down, so we can set directly 100% width - margins ...*/
+    #three {
+        width: 94%;
     }
 }
 
@@ -37,7 +96,7 @@ section .title {
 /* mobile */
 
 @media (max-width:681px) {
-    body {
-        background-color: green;
+    section {
+        width: 95%;
     }
 }
