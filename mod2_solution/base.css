@@ -2,6 +2,7 @@ body {
     background-color: white;
     font-family: "Garamond", serif;
 }
+
 section {
     background-color: grey;
 }
@@ -10,19 +11,22 @@ section .title {
     background-color: yellow;
     width: 80px;
 }
+
+
 /* Desktop */
+
 @media (min-width:992px) {
     body {
         background-color: brown;
     }
-    
     section {
         width: 30%;
-        
     }
 }
 
+
 /* Tablet */
+
 @media (min-width:682px) and (max-width:991px) {
     body {
         background-color: black;
@@ -30,11 +34,10 @@ section .title {
 }
 
 
-
-
 /* mobile */
+
 @media (max-width:681px) {
-body {
+    body {
         background-color: green;
     }
 }
